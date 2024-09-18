@@ -1,0 +1,17 @@
+# Repeat one of this for each node.
+apiVersion: machineconfiguration.openshift.io/v1alpha1
+kind: MachineConfigNode
+metadata:
+  name: ip-10-10-10-10.us-west-2 # name of the node
+  ownerReferences:
+  - apiVersion: v1
+    kind: Node
+    name: ip-10-10-10-10.us-west-2 # name of the node
+    uid: 47842fdf-b61c-4ba3-bcee-a6295a8ed16d # Obtained by inspecting the node
+spec:
+  configVersion:
+    desired: rendered-infra-9146f139e590128383addd85021d1781 # Generated name of the MachineConfigPool for the infra nodes
+  node:
+    name: ip-10-10-10-10.us-west-2 # name of the node
+  pool:
+    name: infra # name of the MachineConfigPool

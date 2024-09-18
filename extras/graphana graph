@@ -1,0 +1,4 @@
+# Query to use in graphana to see disk Utilization
+
+sum(max by (device) (node_filesystem_size_bytes{instance=~"$_master_node", device=~"/.*"})) - sum(max by (device) (node_filesystem_avail_bytes{instance=~"$_master_node", device=~"/.*"})) or
+    sum (max by (volume) (windows_logical_disk_size_bytes{instance=~"$_master_node"})) - sum(max by (volume) (windows_logical_disk_free_bytes{instance=~"$_master_node"}))

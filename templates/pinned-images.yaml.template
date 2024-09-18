@@ -1,0 +1,24 @@
+# Seems options for nodeSelector are not developed yet
+
+# For control plane nodes:
+apiVersion: machineconfiguration.openshift.io/v1alpha1
+kind: PinnedImageSet
+metadata:
+  name: master-pinned-images
+  labels:
+    machineconfiguration.openshift.io/role: "master"
+spec:
+  pinnedImages:
+$IMAGES
+
+---
+# For worker nodes:
+apiVersion: machineconfiguration.openshift.io/v1alpha1
+kind: PinnedImageSet
+metadata:
+  name: worker-pinned-images
+  labels:
+    machineconfiguration.openshift.io/role: "worker"
+spec:
+  pinnedImages:
+$IMAGES
