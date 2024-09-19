@@ -2,7 +2,7 @@
 
 <div align="left">
 
-[![Status](https://img.shields.io/badge/status-active-success.svg)]() [![GitHub Issues](https://img.shields.io/github/issues/cloud-bulldozer/pinned-images-testing.svg)](https://github.com/cloud-bulldozer/pinned-images-testing/issues) [![GitHub Pull Requests](https://img.shields.io/github/issues-pr/cloud-bulldozer/pinned-images-testing.svg)](https://github.com/kcloud-bulldozer/pinned-images-testing/pulls) [![License](https://img.shields.io/badge/license-apache%202.0-blue.svg)](/LICENSE)
+[![Status](https://img.shields.io/badge/status-active-success.svg)]() [![GitHub Issues](https://img.shields.io/github/issues/cloud-bulldozer/pinned-images-testing.svg)](https://github.com/cloud-bulldozer/pinned-images-testing/issues) [![GitHub Pull Requests](https://img.shields.io/github/issues-pr/cloud-bulldozer/pinned-images-testing.svg)](https://github.com/cloud-bulldozer/pinned-images-testing/pulls) [![License](https://img.shields.io/badge/license-apache%202.0-blue.svg)](/LICENSE)
 
 </div>
 
